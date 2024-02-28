@@ -1,0 +1,5 @@
+<h1>Inside Parent component</h1>
+<app-child [messageFromParent]="message"></app-child>
+<app-child (messageEvent)="receivedMessage($event)"></app-child>
+<br>
+<h1>{{"message from child is "+messageFromChild}}</h1>
