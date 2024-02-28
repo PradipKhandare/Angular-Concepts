@@ -1,0 +1,16 @@
+<h1>{{courses[0]}}</h1>
+<h1> 
+  Data by using <strong>ngFor</strong> is
+</h1>
+  <div>
+    <h2 *ngFor="let course of courses">{{course}}</h2>
+  </div>
+  <div>
+    <h2 *ngFor="let fee of fees">{{fee}}</h2>
+  </div>
+
+  <div class="feesCourse" *ngFor="let course of courses; let i=index">
+    <h2>
+      {{course}} - {{fees[i]}}
+    </h2>
+  </div>
